@@ -2,7 +2,7 @@
 
 ###config###
 GIT_ROOT="https://github.com/kevinmager65"
-DOCKER_SERVICES=(docker-sabnzbd docker-sickbeard docker-couchpotato docker-plex docker-bind docker-proxy)
+DOCKER_SERVICES=(docker-bind docker-sabnzbd docker-sickbeard docker-couchpotato docker-plex docker-proxy)
 
 ###SABNZDB CONFIG###
 export SABNZBD_CONFIG_DIR=/var/app/sabnzbd
@@ -22,6 +22,8 @@ export PLEX_DATA_DIR=/srv/media
 export EXTERNAL_IP=192.168.1.150
 ###PROXY###
 export PROXY_CONFIG_DIR=/var/app/proxy/
+
+docker pull ubuntu:16.04
 
 if [ ! -d ".build" ]; then
 	echo "creating .build directory"
