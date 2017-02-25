@@ -1,8 +1,8 @@
-#! /bin/sh
+#! /bin/bash
 
 ###config###
 GIT_ROOT="https://github.com/kevinmager65"
-DOCKER_SERVICES=(docker-bind docker-sabnzbd docker-sickbeard docker-couchpotato docker-plex docker-proxy)
+DOCKER_SERVICES=( docker-bind docker-sabnzbd docker-sickbeard docker-couchpotato docker-plex docker-proxy )
 
 ###SABNZDB CONFIG###
 export SABNZBD_CONFIG_DIR=/var/app/sabnzbd
