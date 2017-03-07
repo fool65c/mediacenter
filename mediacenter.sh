@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 ###config###
 GIT_ROOT="https://github.com/kevinmager65"
@@ -132,9 +132,9 @@ performAction () {
 	for action in "${actions[@]}"; do
 		echo "Performing ${action} on ${service}"
 		if [ "$action" == "start" ]; then
-			docker-compose start -d
+			docker-compose up -d
 		else
-			docker-compose stop
+			docker-compose down
 		fi
 	done
 
