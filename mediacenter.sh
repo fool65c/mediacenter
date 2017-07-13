@@ -23,6 +23,10 @@ export PLEX_DATA_DIR=/srv/media
 export EXTERNAL_IP=192.168.1.150
 ###PROXY###
 export PROXY_CONFIG_DIR=/var/app/proxy/
+###INFLUX CONFIG###
+export INFLUX_CONFIG_DIR=/var/app/influx/config
+export INFLUX_DATA_DIR=/var/app/influx/data
+
 
 ###LOCAL BUILD DIR###
 BUILD_DIR=./.build
