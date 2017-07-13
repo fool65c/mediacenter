@@ -2,7 +2,7 @@
 
 ###config###
 GIT_ROOT="https://github.com/kevinmager65"
-DOCKER_SERVICES=(docker-sabnzbd docker-sickbeard docker-couchpotato docker-plex docker-bind docker-proxy)
+DOCKER_SERVICES=(docker-sabnzbd docker-sickbeard docker-couchpotato docker-plex docker-bind docker-proxy docker-influxdb)
 SERVICE_ACTIONS=(stop start restart)
 
 ###SABNZDB CONFIG###
